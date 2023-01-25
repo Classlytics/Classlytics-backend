@@ -4,7 +4,6 @@ const router = express.Router();
 const studentRoutes = require('./custom/student');
 const teacherRoutes = require('./custom/teacher');
 const classRoutes = require('./custom/class');
-
 const healthController = require('../controllers/HealthController');
 
 // const HomeController = require('../app/controllers/HomeController');
@@ -19,7 +18,7 @@ const healthController = require('../controllers/HealthController');
 // router.get('/forgot-password', AuthController.forgotPasswordPage);
 // router.post('/forgot-password', AuthController.forgotPassword);
 
-router.use('/students', studentRoutes);
+router.use('/student', studentRoutes);
 router.use('/teacher', teacherRoutes);
 router.use('/class', classRoutes);
 

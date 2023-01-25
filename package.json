@@ -19,6 +19,7 @@
     "prettier": "^2.8.3"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "connect-session-sequelize": "^7.0.1",

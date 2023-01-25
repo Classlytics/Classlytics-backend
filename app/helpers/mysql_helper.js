@@ -25,3 +25,12 @@ exports.getQueryResult = async (query) => {
         return null;
     }
 };
+
+exports.executeMultiQuery = async (queryList) => {
+    const connection = await this.getConnection();
+    // eslint-disable-next-line no-plusplus
+    for (let i = 0; i < queryList.length; ++i) {
+        // eslint-disable-next-line no-await-in-loop
+        await connection.query(queryList[i]);
+    }
+};
